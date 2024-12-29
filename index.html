@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone, Paper, Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Stone, Paper, Scissors Game</h1>
+        <div class="game-board">
+            <div class="user1">
+                <h2>User 1's Turn</h2>
+                <div class="choices">
+                    <img src="stone.jpg" alt="Stone" class="choice" data-choice="stone">
+                    <img src="paper.jpg" alt="Paper" class="choice" data-choice="paper">
+                    <img src="scissors.jpg" alt="Scissors" class="choice" data-choice="scissors">
+                </div>
+                <p id="user1-choice">Choose your move!</p>
+            </div>
+            <div class="user2">
+                <h2>User 2's Turn</h2>
+                <div class="choices">
+                    <img src="stone.jpg" alt="Stone" class="choice" data-choice="stone">
+                    <img src="paper.jpg" alt="Paper" class="choice" data-choice="paper">
+                    <img src="scissors.jpg" alt="Scissors" class="choice" data-choice="scissors">
+                </div>
+                <p id="user2-choice">Choose your move!</p>
+            </div>
+        </div>
+        <div class="result">
+            <h3>Result: <span id="game-result">Waiting for players...</span></h3>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
